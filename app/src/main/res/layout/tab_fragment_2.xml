@@ -15,29 +15,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Carbon Generated So Far = 113kg"
-            android:textAlignment="center"
+            android:textSize="33dp"
+            android:text="113 kg"
+            android:layout_gravity="center"
             android:id="@+id/creditview"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginTop="10dp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Carbon Collected So Far"
+            android:textAlignment="center"
+            android:id="@+id/creditview_text"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Monthly Base Points = 100"
+            android:text="100"
+            android:textSize="33dp"
             android:textAlignment="center"
             android:id="@+id/creditview2"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Base Points"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:id="@+id/creditview2_text"
+            android:layout_marginBottom="5dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Adjusted Points = 107"
+            android:text="107"
+            android:textSize="33dp"
             android:textAlignment="center"
             android:id="@+id/creditview3"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Adjusted Points"
+            android:textAlignment="center"
+            android:id="@+id/creditview3_text"
+            android:layout_marginBottom="5dp"/>
+
         <EditText
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
