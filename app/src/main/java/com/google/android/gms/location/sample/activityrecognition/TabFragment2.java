@@ -44,7 +44,7 @@ public class TabFragment2 extends Fragment implements View.OnClickListener {
         mSendAmount = (EditText) view.findViewById(R.id.edit_amount);
         mCreditAvail = (TextView) view.findViewById(R.id.creditview);
         mSendButton.setOnClickListener(this);
-        new RequestTask().execute("http://192.168.2.0:4000/viewcredit/"+username+"/"+password);
+        //new RequestTask().execute("http://192.168.2.0:4000/viewcredit/"+username+"/"+password);
 
 
 //        return inflater.inflate(R.layout.tab_fragment_2, container, false);
