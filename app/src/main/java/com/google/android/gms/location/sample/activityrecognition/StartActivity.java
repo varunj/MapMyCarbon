@@ -8,18 +8,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.gms.location.sample.activityrecognition.R;
-
 
 public class StartActivity extends AppCompatActivity {
 
+    public String username;
+    public String password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Bundle extras = getIntent().getExtras();
+        username=extras.getString("username");
+        password=extras.getString("password");
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Activity"));
         tabLayout.addTab(tabLayout.newTab().setText("Redeem"));
