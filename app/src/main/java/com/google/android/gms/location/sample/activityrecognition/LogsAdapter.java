@@ -4,7 +4,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.amulyakhare.textdrawable.TextDrawable;
+import com.amulyakhare.textdrawable.util.ColorGenerator;
 
 import java.util.List;
 
@@ -36,6 +40,14 @@ public class LogsAdapter extends RecyclerView.Adapter<LogsAdapter.ContactViewHol
         View itemView = LayoutInflater.
                 from(viewGroup.getContext()).
                 inflate(R.layout.card_layout, viewGroup, false);
+        ColorGenerator generator = ColorGenerator.MATERIAL; // or use DEFAULT
+// generate random color
+        int color1 = generator.getRandomColor();
+        TextDrawable drawable = TextDrawable.builder()
+                .buildRound("C", color1);
+
+        ImageView image = (ImageView) itemView.findViewById(R.id.image_view);
+        image.setImageDrawable(drawable);
 
         return new ContactViewHolder(itemView);
     }
