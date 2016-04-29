@@ -24,8 +24,9 @@ public class StartActivity extends AppCompatActivity {
         password=extras.getString("password");
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Activity"));
-        tabLayout.addTab(tabLayout.newTab().setText("Redeem"));
+        tabLayout.addTab(tabLayout.newTab().setText("Points"));
         tabLayout.addTab(tabLayout.newTab().setText("Logs"));
+        tabLayout.addTab(tabLayout.newTab().setText("Redeem"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);

@@ -65,34 +65,6 @@
             android:id="@+id/creditview3_text"
             android:layout_marginBottom="5dp"/>
 
-        <EditText
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/white"
-            android:ems="10"
-            android:id="@+id/edit_sendto"
-            android:hint="Sent To" />
-        <EditText
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:textColor="@color/white"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Amount"
-            android:ems="10"
-            android:id="@+id/edit_amount" />
-
-        <Button
-            android:layout_marginTop="20dp"
-            android:layout_width="317dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/sendbutton"
-            android:layout_gravity="center_horizontal"
-            android:text="Login"
-            android:background="@color/colorPrimary"
-            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </RelativeLayout>
